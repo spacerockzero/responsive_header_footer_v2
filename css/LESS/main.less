@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* CSS Document - BYU-Idaho Main.css */
+
+/*********** MAIN.LESS BYU-I BOOTSRAP CSS FRAMEWORK LOADER ****************/
+/*                                                                        */
+/*      MAIN.LESS is a bootstrap loader for the CSS framework on byu-i    */
+/*      It uses LESS css [http://lesscss.org/]                            */
+/*      It imports the LESS css files into one main.css file on compile   */
+/*      in a method similar to the twitter bootstrap                      */
+/*      [http://twitter.github.com/bootstrap/]                            */
+/*      This bootstrap controls the order of importation for all          */
+/*      css files after the blueprint grid framework and                  */
+/*      ie fixes have been loaded. DO NOT directly edit the css files.    */
+/*      Your work will be overwritten the next time that corresponding    */
+/*      LESS file is compiled.                                            */
+/*      If you have any questions, please contact                         */
+/*      University Communications Web Services                            */
+/*                                                                        */
+/**************************************************************************/
+
+/* IMPORT ALL GLOBAL AND COMMON CSS */
+
+	/* defaults [contains LESS, css for common compatability not found in blueprint, etc ] */
+	@import "LESS/defaults.less";
+
+	/*VARIABLES [contains LESS variables for BYU-I Identity Standards and other common values]*/
+	@import "LESS/variables.less";
+
+	/* MIXINS [contains LESS mixins shortcuts for common css tasks] */
+	@import "LESS/mixins.less";	
+
+	/* GLOBAL [contains all TRULY GLOBAL css for header/footer] */
+	@import "LESS/global.less";
+
+	/* COMMON [contains all css elements that are common among many or most pagetypes] */
+	@import "LESS/common.less";
+
+	/*IMPORT ADDITIONAL GLOBAL/COMMON STYLESHEETS*/
+	@import "LESS/typography.less";
+
+	/*UI_PATTERNS [contains LESS classes for BYU-I Identity Standards and other common tasks]*/
+	@import "LESS/ui_patterns.less";
+
+	/****************************************************************/
+	/*                                                              */
+	/*   NOTE: Responsive CSS has been commented out [12.8.2011].   */
+	/*   It will be part of future iterations once all of the 950   */
+	/*   pagetypes have been completed.                             */
+	/*   - Jakob Anderson, as per Jeff Dunster's Instructions       */
+	/*                                                              */
+	/****************************************************************/
+
+	@import "LESS/responsive.less";

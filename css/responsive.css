@@ -1,0 +1,1011 @@
+/*responsive css sample (work back into main when complete)*/
+/* LESS BLUEPRINT GRID WIDTH VARIABLES & MIXINS */
+.span-1 {
+  width: 30px;
+}
+.span-2 {
+  width: 70px;
+}
+.span-3 {
+  width: 110px;
+}
+.span-4 {
+  width: 150px;
+}
+.span-5 {
+  width: 190px;
+}
+.span-6 {
+  width: 230px;
+}
+.span-7 {
+  width: 270px;
+}
+.span-8 {
+  width: 310px;
+}
+.span-9 {
+  width: 350px;
+}
+.span-10 {
+  width: 390px;
+}
+.span-11 {
+  width: 430px;
+}
+.span-12 {
+  width: 470px;
+}
+.span-13 {
+  width: 510px;
+}
+.span-14 {
+  width: 550px;
+}
+.span-15 {
+  width: 590px;
+}
+.span-16 {
+  width: 630px;
+}
+.span-17 {
+  width: 670px;
+}
+.span-18 {
+  width: 710px;
+}
+.span-19 {
+  width: 750px;
+}
+.span-20 {
+  width: 790px;
+}
+.span-21 {
+  width: 830px;
+}
+.span-22 {
+  width: 870px;
+}
+.span-23 {
+  width: 910px;
+}
+.span-24 {
+  width: 950px;
+  margin-right: 0;
+}
+/* TRANSITION MIXIN */
+/* You can override transition time when called by 
+   passing new args ie: ".transition(1s);"     */
+/*toggle show container for width testing*/
+.container {
+  /*background-color:#f5f5f5;*/
+
+}
+#social_icons a {
+  text-indent: -1000px;
+  overflow: hidden;
+}
+#main_header #search_wrapper .search_box {
+  width: 225px;
+}
+#footer_brand #left_container div a {
+  margin-right: 25px;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+#footer_brand #lds_church_link {
+  width: 152px;
+  padding-right: 25px;
+  background-position: -10px -40px;
+}
+#footer_brand #lds_church_link:hover {
+  background-position: -10px -116px;
+}
+#footer_brand #byu_link {
+  width: 70px;
+  left: 0px;
+  margin-left: 10px;
+  padding: 0 5px;
+  background-position: -219px -40px;
+}
+#footer_brand #byu_link:hover {
+  background-position: -219px -116px;
+}
+#footer_brand #byuh_link {
+  width: 70px;
+  left: 0px;
+  padding: 0 5px;
+  background-position: -321px -40px;
+}
+#footer_brand #byuh_link:hover {
+  background-position: -321px -116px;
+}
+#footer_brand #ldsbc_link {
+  width: 70px;
+  left: 0px;
+  padding-left: 5px;
+  background-position: -420px -40px;
+}
+#footer_brand #ldsbc_link:hover {
+  background-position: -420px -116px;
+}
+/*RESPONSIVE WEB EXAMPLES*/
+/******************************************************************************************/
+/**
+/**                  320 PX RESPONSIVE for Mobile Landscape View
+/**
+/******************************************************************************************/
+/*styles for 320px and up! Max container width using blueprint is to be 310px, or span-8 */
+@media only screen and (min-width: 320px), only screen and (max-width: 480px) {
+  .container {
+    width: 310px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*.container section img {
+  		max-width:310px;
+  		height:auto;
+  	}*/
+  /*TOP HEADER (BLACK HEADER AREA)*/
+  #top_header {
+    display: none;
+  }
+  /*MAIN HEADER (blue heading area)*/
+  #main_header {
+    height: 40px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-2 a img {
+    width: 45px;
+    height: auto;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #university_name {
+    font-size: 15px;
+    padding: 4px 0 0 5px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-2 {
+    width: 45px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-9 {
+    width: 245px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #audience_nav_box {
+    display: none;
+  }
+  #main_header #search_box {
+    left: 520px;
+    display: none;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*Breadcrumb Common Module*/
+  #breadcrumbs a:last-child {
+    padding-bottom: 5px;
+  }
+  /*CONTENT AREA (CHANGE TAGS FOR NEW JOE HTML 5 CONTENT AREA*/
+  /*CONTENT AREA*/
+  aside.span-6 {
+    display: none;
+  }
+  section.span-18 {
+    width: 100%;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*FOOTER AREA*/
+  #mega_footer .span-6 {
+    width: 100%;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #left_container {
+    display: none;
+  }
+  #mega_footer #audience_nav_box_bottom {
+    width: 100%;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #audience_nav_box_bottom li a {
+    font-size: 12px;
+    padding: 3px 20px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #secondary_nav {
+    display: none;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul {
+    padding-top: 10px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul li {
+    width: 50%;
+    float: left;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul li a {
+    text-align: center;
+  }
+  #mega_footer #search_box_bottom {
+    display: block;
+    width: 100%;
+    margin: 7px 0 10px;
+    clear: both;
+    background: url('../images/head/searchboxbkg.jpg') repeat-x #326ba9;
+    -webkit-box-shadow: 0px 2px 9px #222222;
+    -moz-box-shadow: 0px 2px 9px #222222;
+    -ms-box-shadow: 0px 2px 9px #222222;
+    -o-box-shadow: 0px 2px 9px #222222;
+    box-shadow: 0px 2px 9px #222222;
+  }
+  #mega_footer #search_box_bottom ul {
+    margin: 4px 0 0 12px;
+  }
+  #mega_footer #search_box_bottom ul li {
+    display: inline;
+    border-right: solid 1px #999;
+  }
+  #mega_footer #search_box_bottom ul li a {
+    color: #fff;
+    padding: 4px 5px;
+    font-size: 12px;
+  }
+  #mega_footer #search_box_bottom ul li.last {
+    border-right: none;
+  }
+  #mega_footer #search_box_bottom #search_wrapper_bottom {
+    height: 24px;
+    background-image: none;
+    background-color: #fff;
+    margin: 5px 6px 5px 6px;
+  }
+  #mega_footer #search_box_bottom #search_wrapper_bottom form {
+    height: 100%;
+    position: relative;
+  }
+  #mega_footer #search_box_bottom #search_wrapper_bottom .search_box {
+    border: 0px;
+    background-color: transparent;
+    position: relative;
+    top: -3px;
+    margin: 0;
+    padding-left: 4px;
+    width: 260px;
+    font-size: 13px;
+  }
+  #mega_footer #search_box_bottom #search_wrapper_bottom .search_box_submit {
+    position: absolute;
+    border: 0px;
+    top: 2px;
+    background-image: url('../images/head/search.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+  }
+  #mega_footer #footer_links {
+    /*.link_list {
+  				height:20px;
+  				.transition;
+  			}*/
+  
+    /*.link_list:hover {
+  				height:100%;
+  				.transition;
+  			}*/
+  
+  }
+  #mega_footer #footer_brand {
+    min-height: 300px;
+  }
+}
+/******************************************************************************************/
+/**
+/**                  480 PX RESPONSIVE for Mobile Landscape View
+/**
+/******************************************************************************************/
+/*styles for 480px and up! Max container width using blueprint is to be 470px, or span-12 */
+@media screen and (min-width: 480px), only print, projector {
+  .container {
+    width: 470px;
+    /*.transition;*/
+  
+  }
+  /*.container section img {
+  		max-width:480px;
+  		height:auto;
+  	}*/
+  /*TOP HEADER (BLACK HEADER AREA)*/
+  #top_header {
+    display: none;
+  }
+  /*MAIN HEADER (blue heading area)*/
+  #main_header {
+    height: 40px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-2 a img {
+    width: 45px;
+    height: auto;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #university_name {
+    font-size: 15px;
+    padding: 4px 0 0 5px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-2 {
+    width: 45px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-9 {
+    width: 245px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #audience_nav_box {
+    display: none;
+  }
+  #main_header #search_box {
+    left: 520px;
+    display: none;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*Breadcrumb Common Module*/
+  #breadcrumbs a:last-child {
+    padding-bottom: 5px;
+  }
+  /*CONTENT AREA (CHANGE TAGS FOR NEW JOE HTML 5 CONTENT AREA*/
+  /*CONTENT AREA*/
+  aside.span-6 {
+    display: none;
+  }
+  section.span-18 {
+    width: 100%;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*FOOTER AREA*/
+  #mega_footer .span-6 {
+    width: 230px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer .span-6:nth-of-type(2) {
+    margin-right: 0px;
+  }
+  #mega_footer #left_container {
+    display: none;
+  }
+  #mega_footer #audience_nav_box_bottom {
+    width: 100%;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #audience_nav_box_bottom li a {
+    font-size: 12px;
+    padding: 3px 20px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #secondary_nav {
+    display: none;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul {
+    padding-top: 10px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul li {
+    width: 50%;
+    float: left;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul li a {
+    text-align: center;
+  }
+  #mega_footer #search_box_bottom {
+    display: block;
+    width: 100%;
+    margin: 7px 0 10px;
+    clear: both;
+    background: url('../images/head/searchboxbkg.jpg') repeat-x #326ba9;
+    -webkit-box-shadow: 0px 2px 9px #222222;
+    -moz-box-shadow: 0px 2px 9px #222222;
+    -ms-box-shadow: 0px 2px 9px #222222;
+    -o-box-shadow: 0px 2px 9px #222222;
+    box-shadow: 0px 2px 9px #222222;
+  }
+  #mega_footer #search_box_bottom ul {
+    margin: 4px 0 0 12px;
+  }
+  #mega_footer #search_box_bottom ul li {
+    display: inline;
+    border-right: solid 1px #999;
+  }
+  #mega_footer #search_box_bottom ul li a {
+    color: #fff;
+    padding: 4px 5px;
+    font-size: 13px;
+  }
+  #mega_footer #search_box_bottom ul li.last {
+    border-right: none;
+  }
+  #mega_footer #search_box_bottom #search_wrapper_bottom {
+    height: 24px;
+    background-image: none;
+    background-color: #fff;
+    margin: 5px 6px 5px 6px;
+  }
+  #mega_footer #search_box_bottom #search_wrapper_bottom form {
+    height: 100%;
+    position: relative;
+  }
+  #mega_footer #search_box_bottom #search_wrapper_bottom .search_box {
+    border: 0px;
+    background-color: transparent;
+    position: relative;
+    top: -3px;
+    margin: 0;
+    padding-left: 4px;
+    width: 92%;
+    font-size: 13px;
+  }
+  #mega_footer #search_box_bottom #search_wrapper_bottom .search_box_submit {
+    position: absolute;
+    border: 0px;
+    top: 2px;
+    background-image: url('../images/head/search.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    /* float:right; */
+  
+    right: 5px;
+  }
+  #mega_footer #footer_links {
+    /*.link_list {
+  				height:20px;
+  				.transition;
+  			}*/
+  
+    /*.link_list:hover {
+  				height:100%;
+  				.transition;
+  			}*/
+  
+  }
+  #mega_footer #footer_brand {
+    min-height: 300px;
+  }
+}
+/******************************************************************************************/
+/**
+/**                  760 PX RESPONSIVE for Tablet Portrait View
+/**
+/******************************************************************************************/
+/*styles for 800px and up! Max container width using blueprint is to be 750px, or span-19 */
+@media screen and (min-width: 760px) {
+  .container {
+    width: 750px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*.container section img {
+  		max-width:750px;
+  		height:auto;
+  	}*/
+  #top_header {
+    display: block;
+  }
+  #main_header div.span-9 {
+    width: 327px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header {
+    height: 55px;
+  }
+  #main_header .span-2 a img {
+    width: 70px;
+    height: auto;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #university_name {
+    font-size: 18px;
+    padding: 13px 0 0 5px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-2 {
+    width: 70px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-9 {
+    width: 350px;
+  }
+  #main_header #audience_nav_box {
+    display: block;
+    width: 373px;
+    font-size: 11px;
+    left: 377px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #audience_nav_box li a {
+    padding: 3px 5px;
+    /*.transition;*/
+  
+  }
+  #main_header #search_box {
+    left: 480px;
+    display: block;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*Breadcrumb Common Module*/
+  #breadcrumbs a:last-child {
+    padding-bottom: 5px;
+  }
+  /*CONTENT AREA*/
+  aside.span-6 {
+    display: block;
+  }
+  section.span-18 {
+    width: 510px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*footer AREA*/
+  #mega_footer .span-6 {
+    width: 180px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer .span-6:nth-of-type(2) {
+    margin-right: 10px;
+  }
+  #mega_footer #left_container {
+    display: block;
+  }
+  #mega_footer #audience_nav_box_bottom {
+    width: 405px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #audience_nav_box_bottom li a {
+    padding: 3px 5px;
+    font-size: 12px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #secondary_nav {
+    display: block;
+    width: 335px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #secondary_nav li {
+    padding: 0 6px;
+    font-size: 12px;
+  }
+  #mega_footer #secondary_nav li.last {
+    padding: 0 0 0 6px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul {
+    padding-top: 18px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul li {
+    padding-bottom: 0px;
+    width: auto;
+    float: left;
+    height: auto;
+    margin-bottom: 0px;
+  }
+  #mega_footer #search_box_bottom {
+    display: none;
+  }
+  #mega_footer #footer_brand #left_container {
+    width: 430px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #footer_brand #lds_church_link {
+    margin-right: 0;
+  }
+  #mega_footer #footer_brand #byu_link {
+    margin-right: 0;
+  }
+  #mega_footer #footer_brand #byuh_link {
+    margin-right: 0;
+  }
+  #mega_footer #footer_brand #ldsbc_link {
+    margin-right: 0;
+  }
+  #mega_footer #footer_links .link_list {
+    height: 100%;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #footer_links .link_list:hover {
+    height: 100%;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #footer_brand {
+    min-height: inherit;
+  }
+}
+/******************************************************************************************/
+/**
+/**                  1100 PX RESPONSIVE for Tablet Landscape / Normal Desktop View
+/**
+/******************************************************************************************/
+/*styles for 1100px and up! Max container width using blueprint is to be 950px, or span-24 */
+@media screen and (min-width: 1100px) {
+  .container {
+    width: 950px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*.container section img {
+  		max-width:950px;
+  		height:auto;
+  	}*/
+  /*HEADER AREA*/
+  #top_header {
+    display: block;
+  }
+  #main_header div.span-9 {
+    width: 350px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header {
+    height: 55px;
+  }
+  #main_header a img {
+    width: 70px;
+    height: auto;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #university_name {
+    font-size: 18px;
+    padding: 13px 0 0 5px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-2 {
+    width: 70px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header .span-9 {
+    width: 350px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #audience_nav_box {
+    display: block;
+    width: 510px;
+    left: 440px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #audience_nav_box li a {
+    padding: 3px 9px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #main_header #search_box {
+    left: 680px;
+    display: block;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*Breadcrumb Common Module*/
+  #breadcrumbs a:last-child {
+    padding-bottom: 5px;
+  }
+  /*CONTENT AREA*/
+  aside.span-6 {
+    display: block;
+  }
+  section.span-18 {
+    width: 710px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  /*Footer Area*/
+  #mega_footer .span-6 {
+    width: 230px;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer .span-6:nth-of-type(2) {
+    margin-right: 10px;
+  }
+  #mega_footer #secondary_nav {
+    width: 567px;
+    display: block;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #left_container {
+    display: block;
+  }
+  #mega_footer #secondary_nav {
+    width: 475px;
+  }
+  #mega_footer #secondary_nav li {
+    padding: 0 13px 0 12px;
+    font-size: 12px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom {
+    width: 465px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul {
+    padding-top: 18px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul li {
+    padding-bottom: 0px;
+    width: auto;
+    float: left;
+    height: auto;
+    margin-bottom: 0px;
+  }
+  #mega_footer #footer_nav #audience_nav_box_bottom ul li a {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  #mega_footer #search_box_bottom {
+    display: none;
+  }
+  #mega_footer #footer_brand {
+    min-height: inherit;
+  }
+  #mega_footer #footer_brand #left_container {
+    width: 630px;
+  }
+  #mega_footer #footer_brand #lds_church_link {
+    margin-right: 25px;
+  }
+  #mega_footer #footer_brand #byu_link {
+    margin-right: 25px;
+  }
+  #mega_footer #footer_brand #byuh_link {
+    margin-right: 25px;
+  }
+  #mega_footer #footer_brand #ldsbc_link {
+    margin-right: 25px;
+  }
+  #mega_footer #footer_links .link_list {
+    height: 100%;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+  #mega_footer #footer_links .link_list:hover {
+    height: 100%;
+    /* -webkit-transition: @affected @transition_time ease-in-out;
+         -moz-transition: @affected @transition_time ease-in-out;
+          -ms-transition: @affected @transition_time ease-in-out;
+           -o-transition: @affected @transition_time ease-in-out;
+              transition: @affected @transition_time ease-in-out;*/
+  
+  }
+}

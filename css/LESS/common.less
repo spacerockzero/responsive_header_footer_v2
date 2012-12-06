@@ -1,0 +1,477 @@
+/*COMMON BEGIN*/
+
+/**************** START COMMON ELEMENTS ***********************/
+/*                                                            */
+/*      Common elements are those elements that appear        */
+/*      frequently between many page types, but are not       */
+/*      part of the global header or footer                   */
+/*                                                            */
+/**************************************************************/
+
+/**** BREADCRUMB ****/
+#breadcrumbs {
+	font-size: 10px;
+	clear:both;
+	padding:5px 0 0;
+	min-height:20px;
+	width:100%;
+	a {
+		color: #666666;
+		float: left;
+		padding: 0px 5px 0px 0;
+	}
+	a:hover {
+		color:@byui_med_blue;
+		text-decoration:underline;
+	}
+}
+
+/**** End Breadcrumbs ****/
+
+/******** LEFT NAVIGATION ********/
+#left_nav {margin-bottom: 10px;}
+#left_nav a {
+	text-decoration: none;
+}
+#left_nav a:hover {
+	text-decoration: underline;
+}
+/**** LOCAL SEARCH ****/
+.local_search {
+	height: 29px;
+}
+form.local_search_form {
+	float: left;
+}
+input.local_search_box {
+	float: left;
+	font-size: 12px;
+	width: 186px;
+	margin: 0;
+	padding: 6px 5px 6px 8px;
+}
+input.local_search_button {
+	background: url("../images/leftNav/localSearch_button_sprite_60x29.png");
+	float: left;
+	height: 29px;
+	width: 29px;
+}
+input.local_search_button:hover {
+	background: url("../images/leftNav/localSearch_button_sprite_60x29.png");
+	background-position: 30px 0;
+}
+
+
+
+
+/******** ACCORDION NAVIGATION ********/
+#accordion_control {
+	background-image: url("../images/leftNav/accordion_control_3x18.jpg");
+	height: 15px;
+	padding: 3px 0 0 0;
+}
+.collapse, .expander, .accordion a {
+	cursor: pointer;
+}  
+.collapse {
+	float: right;
+	padding: 0 10px;
+	color: silver;
+	font-size: 9px;
+}
+.ie6 .collapse,
+.ie7 .collapse,
+.ie8 .collapse {
+	margin-top: -2px;
+}
+
+.folder > .expander{
+	background-color: #eee;
+	margin-top: -36px;
+	height: 24px;
+	padding-top: 12px;
+}
+.expander {
+	color: #3B3B3B;
+	display: block;
+	float: right;
+	font-size: 12px;
+	height: 20px;
+	/**height: 20px; /*for IE*/
+	width: 24px;
+	margin-top: -30px;
+	padding: 10px 0 0 2px;
+	/**padding: 10px 0 0; /*for IE*/
+	line-height: 12px;
+	text-align: center;
+}
+.expander:hover{
+	background-color: #CCC;
+}
+.accordion li {
+	list-style: none outside none;
+}
+.accordion {
+	margin: 0;
+	padding: 0;
+	font-size: 8px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.accordion a {
+	display: block;
+	min-height: 20px; 
+	margin-left: 6px;
+	padding: 7px 30px 3px 6px;
+	font-size: 11px;
+}
+.accordion .lvl_1 {
+	float: left;
+	color: black;
+	width: 95%;
+	min-height: 26px;
+	padding: 10px 0 0 5%;
+	margin: 0;
+	font-size: 12px;
+}
+.accordion .lvl_2, .accordion .lvl_4 {
+	color: #222;
+}
+.accordion .lvl_3, .accordion .lvl_5 {
+	color: #444;
+}
+.accordion .lvl_2:hover, .accordion .lvl_3:hover, .accordion .lvl_3:hover, .accordion .lvl_5:hover {
+	background: #adadad;
+}
+
+.accordion > li {
+	background-color: #fbfbfb;
+	.box_gradient_2stop(#eeeeee,#fbfbfb);
+	border-bottom: 1px dotted #444;
+	overflow: hidden;
+	min-height: 36px;
+}
+.ie6 .accordion > li,
+.ie7 .accordion > li,
+.ie8 .accordion > li {
+	margin-top: -2px;
+}
+.accordion > li ul{
+    padding: 5px 0 5px 12px;
+	display: none; /*needed for on load not expanded*/
+	border-top: 1px solid #444;
+}
+.accordion > li > ul{
+	background-image: url("../images/leftNav/accordion_background_270x6.jpg");
+	background-repeat: repeat-y;
+	float: left; /*needed for Firefox*/
+}
+.accordion > li > ul li {
+	background-repeat: no-repeat;
+	background-position: 0px 10px;
+	min-height: 30px;
+	/**min-height: 20px; /*for IE*/
+}
+.ie6 .accordion > li > ul > li > ul li,
+.ie7 .accordion > li > ul > li > ul li,
+.ie8 .accordion > li > ul > li > ul li {
+	min-height: 20px; /*for IE*/
+}
+.accordion > li > ul > li /*Level 2*/
+, .accordion li > ul > li > ul > li > ul > li /*Level 4*/
+, .accordion li > ul > li > ul > li > ul > li > ul > li > ul > li {  /* Level 6 */
+	background-image: url('../images/leftNav/blue-arrow_5x9.png');
+}
+.accordion > li > ul > li > ul > li /*Level 3*/
+, .accordion li > ul > li > ul > li > ul > li > ul > li {  /* Level 5 */
+	background-image: url('../images/leftNav/gray-arrow_5x9.png');
+}
+.accordion > li > ul {
+	width: 216px;
+}
+.accordion > li > ul > li > ul {
+	width: 204px;
+}
+.accordion > li > ul > li > ul > li > ul {
+	width: 192px;
+}
+.accordion > li > ul > li > ul > li > ul > li > ul {
+	width: 180px;
+}
+	/* 	End Accordion */
+
+
+/***** UNIVERITY MESSAGE *****/
+
+.message_top_narrow{
+	color: #ddd;
+	font-size: 10px;
+	font-family: news-gothic-std-1,news-gothic-std-2,Helvetica,Arial,sans-serif;
+	letter-spacing: 0.15em;
+	position: relative;
+	text-transform: uppercase;
+	padding: 10px 0 0px 10px;
+	display:block;
+	background: url(../images/message_bar.png) no-repeat 0 0 transparent;
+	width: 290px;
+	height: 19px;
+}
+
+.message_container{
+	margin:30px auto 10px;
+	width:230px;
+}
+.message_top_narrow:hover{
+	color:#fff;
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+.message_info_narrow {
+	border-left: 1px solid #888;
+	border-right: 1px solid #888;
+	display:block;
+	height:100%;
+}
+
+.message_bottom_narrow {
+	background: url(../images/bottom_narrow.png) no-repeat 0 0 transparent;
+	width: 220px;
+	height: 16px;
+	border-top: solid 1px #999;
+	position: relative;
+	display:block;
+	padding-left: 10px;
+	font-size: 9px;
+	font-family: Helvetica,news-gothic-std-1,news-gothic-std-2,Arial,sans-serif;
+	font-weight: bold;
+	color: #A2A2A2;
+	text-transform: uppercase;
+	padding-top: 5px; 
+}
+
+/***** END UNIVERSITY MESSAGE *****/
+
+/**** End Left Navigation ****/
+
+/***** PAGE TITLE *****/
+#page_title_date {
+	font-size: 13px;
+	float: right;
+	margin-top: 6px;
+}
+#page_title {
+  margin: 0px 0px 10px 0px;
+  padding: 8px 0;
+  color: #363636;
+  background-color: white;
+  border-top: 1px dotted #666;
+  border-bottom: 1px dotted #666;
+}
+#page_title h2 {
+  color: #363636;
+  margin: 0;
+  padding: 0px 10px;
+  font-size: 20px;
+  line-height: 20px;
+}
+h4.sub_title {
+font-size: 14px;
+padding-left: 10px;
+font-style: italic;
+margin: 0;
+}
+/***** END PAGE TITLE *****/
+
+/* Box Headers */
+.box_header {
+  display: block;
+  text-transform: uppercase;
+  color: #FFF;
+  line-height: 16px;
+  padding: 0.4em 1em;
+  margin: 0px;
+  letter-spacing: 0.1em;
+  background: #326BA9; /* Old browsers */
+  .box_gradient_4stop(#1a5e80, #326BA9, #326BA9, #1a5e80);
+}
+h2.box_header {
+	font-size:11px;
+}
+.box_header a{
+	color:#fff;
+}
+
+
+
+
+
+/******** HIGHLIGHTED LINKS	********/
+#highlighted_links {
+	background: none repeat scroll 0 0 #EEE;
+	margin-bottom: 10px;
+}
+#highlighted_links a {
+	background-image: url('../images/leftNav/blue-arrow_5x9.png');
+	background-repeat: no-repeat;
+	background-position: 15px 8px;
+	border-bottom: 1px dotted #444;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	display: block;
+	color: #3C3C3C;
+	font-size: 11px;
+	padding: 5px 0 5px 30px;
+}
+#highlighted_links a:hover {
+	text-decoration: underline;
+}
+
+/******** CONTACT INFO BOX	********/
+#contact_info {
+	border: 1px solid #999;
+	padding: 5px 2px 2px 2px;
+	margin-bottom: 10px;
+}
+#contact_info #location {
+	margin: 0 8px 4px;
+}
+#contact_info .contact_header {
+	font-size: 9px;
+	font-weight: bold;
+	color: #1C74B5;
+	margin: 0px;
+}
+#contact_info .lvl_3 {
+	margin: 0;
+	font-size: 9px;
+	font-weight: bold;
+	color: #1C74B5;
+}
+#contact_info span {
+	display: block;
+	font-size: 10px;
+	line-height: 12px;
+	color: black;
+}
+#contact_info .contact_cell {
+	border-top: 1px dotted #999;
+	background-color: #EEE;
+	padding: 5px 0 2px 8px;
+	overflow: hidden;
+	cursor: pointer;
+	height: 24px;
+}
+#contact_info .expand_button {
+	float: right;
+	padding: 4px 9px;
+	margin: -23px 0 0 0;
+}
+#all_contacts_link {
+	float: right;
+	margin: 0 0 10px 0;
+}
+#all_contacts_link a {
+	color: #666;
+	font-size: 10px;
+}
+/******** END CONTACT INFO BOX	********/
+
+/******** HIGHLIGHTED ADS *********/
+.highlighted_ads {
+	padding: 12px 0 20px;
+	border-top: 1px dotted #CCC;
+	border-bottom: 1px solid #CCC;
+	float: left;
+	width: 100%;
+}
+/******** END HIGHLIGHTED ADS *********/
+
+
+/******** QUICK LINKS *********/
+.quick_links {
+	overflow: hidden;
+}
+.quick_links a:hover {
+	text-decoration: underline;
+}
+.quick_link_column li.quick_links_header {
+	color: #353434;
+	font-size: 12px;
+	font-weight: bold;
+	list-style: none;
+	margin-left: 0;
+}
+.quick_link_column {
+	padding: 0px 0px;
+}
+.quick_link_column ul {
+	padding: 0 10px 500px 25px;
+	margin: 10px 0 -500px 0;
+	border-right: 2px dotted #ccc;
+}
+.quick_link_column ul.last {
+	border-right: 0;
+}
+.quick_link_column li {
+	font-size: 11px;
+	list-style: outside url("../images/interface/arrow_bullet_gray_5x9.png");
+	margin: 0 0 5px 13px;
+}
+/******** END QUICK LINKS *********/
+
+
+/******** START MESSAGE BOXES **********/
+
+
+.message_block{
+	border:1px solid #cecece;
+	overflow:hidden;
+	margin-bottom: 20px;
+}
+.message_block_short{
+	height:133px;
+	overflow:hidden;
+	margin-bottom: 20px;
+	border:1px solid #cecece;
+}
+.message_block_top_nav{
+	background-color:#ebebeb;
+	color:#363636;
+	height:39px;
+	border-bottom: 1px solid #cecece;
+}
+.message_block_content{
+	height:100%;
+	background-color:#fff;
+	margin-bottom:-8px;
+}
+.message_block_content img{
+	width:100%;
+}
+.message_image_nav_block{
+	display:block;
+	height:39px;
+	width:39px;
+	float:left;
+	border-right: 1px solid #cecece;
+	z-index:99;
+	background-image: url('../images/byui_home/message_arrow.png');
+}
+.message_image_nav_block:hover{
+	background-image: url('../images/byui_home/message_arrow_hover.png');
+}
+
+.message_title_block{
+	float:right;
+	width:80%;
+	margin-top:11px;
+	text-transform: uppercase;
+	font-size: 12px;
+	clear:none;
+}
+
+/************ END MESSAGE BOXES ************/
+
+/**************** END COMMON ELEMENTS ****************/
+/*COMMON END*/
