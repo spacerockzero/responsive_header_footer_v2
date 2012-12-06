@@ -11,7 +11,7 @@
 @default_indent:15px;
 
 /*@text_color:#6d6e71;*/
-@text_color:@byui_dark_gray;
+@text_color:@byui_darker_gray;
 
 /* deprecated by global variables in variables.less file, but keeps this file compiling */
 /*@byui_med_blue:#007ebd;
@@ -26,7 +26,8 @@
 .type, #tinymce {
 	.serif;
  	font-size: @default_text;
- 	color:@byui_med_gray;
+ 	/*color:@byui_med_gray;*/
+ 	color:@text_color;
  	line-height:1.4em;
  	a {	
  		color:@byui_med_blue;
@@ -39,7 +40,8 @@
 	p {
 		.serif;
 	 	font-size: @default_text;
-	 	color:@byui_med_gray;
+	 	/*color:@byui_med_gray;*/
+	 	color:@text_color;
 	 	line-height:1.4em;
 	}
 	h1 {
@@ -108,9 +110,15 @@
 		line-height:1.4em;
 	}
 	ul {
-	list-style-type:disc;
+	list-style-type:none;
+		li {
+			list-style-type:disc;
+		}
 		ul {
-			list-style-type:circle;
+			list-style-type:none;
+			li {
+				list-style-type:circle;
+			}
 			ul {
 				list-style-type:none;
 				li {
@@ -162,6 +170,9 @@
 			vertical-align:middle;
 			background-color: @byui_med_blue;
 			color: #fff;
+			h1, h2, h3, h4, h5, h6 {
+				color:#ffffff;
+			}
 		}
 		tbody tr:nth-child(even) td,
 		tbody tr.even td {

@@ -23,9 +23,12 @@
 	font-family: Georgia;
 }
 .margin_bleed {
-	margin: auto -5000px;
-	padding-left: 5000px;
-	padding-right: 5000px;
+	margin: auto -1000px;
+	padding-left: 1000px;
+	padding-right: 1000px;
+	/*margin: auto -50%;
+	padding-left: 50%;
+	padding-right: 50%;*/
 	overflow: auto;
 }
 nav li {
@@ -33,22 +36,18 @@ nav li {
 }
 /******** HEADER ********/
 #top_header {
-	padding-top: 10px;
+	/*padding-top: 10px;*/
 	background-color: #252525;
-	/*height: 26px;*/
+	height: 38px;
 }
 #main_nav ul {
 	padding-left: 0;
-}
-.ie7 #main_nav ul, .ie8 #main_nav ul {
-	display:block;
-	height:30px;
-	margin-bottom:8px;
 }
 #main_header {
 	padding-top: 15px;
 	height: 55px;
 	background-color: #326ba9;
+	.box_gradient_4stop(#2b5a8e, #326ba9, #326ba9, #326ba9);
 	overflow: visible;
 }
 #university_name {
@@ -70,13 +69,14 @@ nav li {
 	left: 680px;
 	clear: both;
 	background: url('../images/head/searchboxbkg.jpg') repeat-x #326ba9;
-	-moz-box-shadow: 0px -9px 15px #000;
-	-webkit-box-shadow: 0px -9px 15px #000;
-	box-shadow: 0px -9px 15px #000;
+	-moz-box-shadow: 0 0px 15px #000;
+	-webkit-box-shadow: 0 0px 15px #000;
+	box-shadow: 0 0px 15px #000;
 }
 #search_box ul{
 	font-size: 8px;
-	margin: 4px 0 0 12px;
+	/*margin: 4px 0 0 12px;*/
+	margin: 4px 0 0 8px;
 }
 #search_box ul li{
 	display: inline;
@@ -97,7 +97,6 @@ nav li {
 	margin: 5px 6px 5px 6px;
 	form {
 		height: 100%;
-		position:relative;
 	}
 	.search_box {
 		border: 0px;
@@ -110,7 +109,7 @@ nav li {
 		font-size: 13px;
 	}
 	.search_box_submit {
-		position:absolute;
+		position:relative;
 		border: 0px;
 		top:2px;
 		background-image: url('../images/head/search.png');
@@ -118,61 +117,43 @@ nav li {
 		background-color: transparent;
 		width: 20px;
 		height: 20px;
-		/* float:right; */
-		right:3px;
 	}
 }
 #search_wrapper:hover .search_box_submit {
 		background-position: 0px -20px;
 }
-/*#search_wrapper form {
-	height: 100%;
-}*/
-/*#search_wrapper .search_box {
-	border:0px;
-	background-color:transparent; 
-	position: relative;
-	top: -5px;
-	margin: 0;
-	padding-left: 4px;
-	width:226px;
-	font-size: 13px;
-}*/
-/*#search_wrapper .search_box_submit {
-	position:relative;
-	border: 0px;
-	top:2px;
-	background-image: url('../images/head/search.png');
-	background-repeat: no-repeat;
-	background-color: transparent;
-	width: 20px;
-	height: 20px;
-}*/
-/*#search_wrapper:hover .search_box_submit {
-	background-position: 0px -20px;
-}*/
-header #audience_nav_box {
+.ie7 .main_header #main_header #search_box #search_wrapper .search_box_submit {
+	right:-6px;
+	float:none;
+}
+.ie7 .main_header #main_header #search_box #search_wrapper .search_box {top:-3px;}
+#main_header #audience_nav_box {
 	display:block;
 	left:440px;			
 	position:absolute;
 	right:0;
 	font-size:11px;
 }
-header #audience_nav_box ul {
+#main_header #audience_nav_box ul {
 	float: right;
 }
 
 /******** HEADER AND FOOTER *********/
-header a, #mega_footer a {
+#top_header a, #main_header a, #mega_footer a {
 	color: #fff;
 }
-header a:visited, #mega_footer a:visited{
+.mega_footer {background:black;}
+#top_header a:visited, #main_header a:visited, #mega_footer a:visited{
 	color: #e2e2e2;
 }
-header ul, #mega_footer ul {
+#top_header ul, #main_header ul, #mega_footer ul {
 	list-style: none outside none;
 	padding: 0;
 	margin: 0;
+}
+#search_box ul {
+	font-size: 8px;
+	margin: 4px 0 0 12px;
 }
 #main_nav li, #secondary_nav li{
 	padding-right: 13px;
@@ -180,7 +161,26 @@ header ul, #mega_footer ul {
 	border-right: solid 1px #666;
 	float: left;
 	/*height:20px;*/
-	margin-bottom:10px;
+	/*margin-bottom:10px;*/
+	/*padding: 0px 13px 0px 13px;
+	height: 20px;*/
+}
+#main_nav {
+	position: relative;
+	top: 9px;
+	li {
+		padding:0;
+		a {
+			padding: 0px 13px 0px 13px;
+			height: 20px;
+			display: block;
+		}
+		&.first {
+			a {
+				padding-left: 0;
+			}
+		}
+	}
 }
 #mega_footer #secondary_nav li.last{
 		padding:0 0 0 12px;
@@ -221,7 +221,6 @@ header ul, #mega_footer ul {
 	background-color: #326ba9;
 	.rounded-corners(5px);
 	color:#fff;
-	font-size:11px;
 } 
 #audience_nav_box li a:hover, #audience_nav_box_bottom li a:hover{
 	background-image: url('../images/interface/buttonbackgroundhover.png');
@@ -247,12 +246,7 @@ header ul, #mega_footer ul {
 /**** footer navigation ***/	
 #footer_nav {
 	background-color: #326ba9;
-}
-.ie7 #footer_nav {
-	height:75px;
-}
-.ie8 #audience_nav_box_bottom {
-	width:610px;
+	height:78px;
 }
 #footer_nav #audience_nav_box_bottom ul {
 	padding-top: 24px;
@@ -307,6 +301,7 @@ header ul, #mega_footer ul {
 }
 #footer_links .link_list a {
 	color: #b7b7b7;
+	display:block;
 }
 #footer_links .link_list a:hover {
 	color: #FFF;
