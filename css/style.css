@@ -1,0 +1,75 @@
+/* RESPONSIVE FRAMEWORK FOR CUSTOM CODE */
+/* Framework by Jakob Anderson : and08073@byui.edu for any questions */
+
+/* All style code to be used on responsive
+   framework must be nested under the 
+   .responsive class. If you need to 
+   match a browser size that is larger than 
+   any of these media queries, do so following 
+   the dimension patterns already used, but do 
+   not change the current pixel dimensions, 
+   they are exactly the same as the header/footer 
+   framework, and custom layout shifts must always 
+   match exactly */
+
+/*DEFAULT STATIC CSS BEHAVIOR, MUST APPLY TO ALL SIZES, RESPONSIVE AND OTHERWISE*/
+/* goes here */
+
+/* ALL RESPONSIVE CODE GOES IN THE FOLLOWING */
+
+/* GENERAL CODE TO ONLY APPLY TO PAGES USING RESPONSIVE */
+.responsive {
+
+}
+
+/*RESPONSIVE WEB EXAMPLES*/
+/* NOTE: For very css rule you change for one of the following browser dimension media 
+   queries, you must explicitly define for all other dimension media queries */
+
+/******************************************************************************************/
+/**                                                                                       */
+/**                  320 PX RESPONSIVE for Mobile Portrait View                           */
+/**                                                                                       */
+/******************************************************************************************/
+/* styles for 320px and up! */
+@media only screen and (min-width: 320px), only screen and (max-width: 480px) {
+  .responsive {
+
+  }
+}
+
+/******************************************************************************************/
+/**                                                                                       */
+/**                  480 PX RESPONSIVE for Mobile Landscape View                          */
+/**                                                                                       */
+/******************************************************************************************/
+/* styles for 480px and up! */
+@media screen and (min-width: 480px), only print, projector {
+  .responsive{
+
+  }
+}
+
+/******************************************************************************************/
+/**                                                                                       */
+/**                  760 PX RESPONSIVE for Tablet Portrait View                           */
+/**                                                                                       */
+/******************************************************************************************/
+/* styles for 800px and up! */
+@media screen and (min-width: 760px){
+  .responsive { 
+
+  }
+}
+
+/******************************************************************************************/
+/**                                                                                       */
+/**                  1100 PX RESPONSIVE for Tablet Landscape / Normal Desktop View        */
+/**                                                                                       */
+/******************************************************************************************/
+/* styles for 1100px and up! */
+@media screen and (min-width: 1100px){
+  .responsive {
+
+  }
+}

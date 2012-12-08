@@ -110,6 +110,9 @@ a:hover,
 a:active {
   outline: none;
 }
+html {
+  background-color: black;
+}
 /*html {overflow:auto; overflow-y: scroll;}*/
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -119,7 +122,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /*font-smooth: always;*/
 
-  background: black;
+  background: white;
 }
 html.ie7 {
   /*	margin-left: 5%;
@@ -2835,6 +2838,7 @@ html.ie7 {
   }
   .responsive #main_header .span-9 {
     width: 245px;
+    margin-left: 0px;
   }
   .responsive #main_header #audience_nav_box {
     display: none;
@@ -3220,6 +3224,7 @@ html.ie7 {
   }
   .responsive #main_header .span-9 {
     width: 350px;
+    margin-left: 0px;
   }
   .responsive #main_header #audience_nav_box {
     display: block;
@@ -3370,6 +3375,7 @@ html.ie7 {
   }
   .responsive #main_header .span-9 {
     width: 350px;
+    margin-left: 0px;
   }
   .responsive #main_header #audience_nav_box {
     display: block;
