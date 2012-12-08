@@ -17,15 +17,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="icon" href="favicon.ico" />
     
-  <!-- Blueprint and "Gracefully Degrading" scripts for older/cross-browser standards compliance -->
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
-	<![endif]-->
+  <!-- Blueprint Framework and "Gracefully Degrading" css for older/cross-browser standards compliance -->
 	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
 	<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"> 
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection" />				
+	<![endif]-->
 
-	<!-- Global Stylesheet -->
+	<!-- Global Framework Stylesheet -->
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection">
+	
 	<!--  Custom local stylesheet -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection">
 
@@ -200,7 +201,7 @@
 
   <!-- If you will be loading js files, load them all after all content DOM has loaded for a percieved speed boost as per HTML5 Boilerplate. See https://github.com/h5bp/html5-boilerplate/blob/v4.0.1/doc/TOC.md -->
 
-  <!-- If you will be using jQuery, load it from the google CDN first, falling back to a local copy if that fails with the following method, as per HTML5 Boilerplate -->
+  <!-- Uncomment below if you will be using jQuery. Load it from the google CDN first, falling back to a local copy if that fails with the following method, as per HTML5 Boilerplate -->
   <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>-->
 
@@ -208,7 +209,7 @@
   <!--<script src="js/plugins.js"></script>
   <script src="js/main.js"></script>-->
 
-  <!-- Faster-performing non-blocking asynchronous javascript load script for google analytics. Will not block items that load after it with this code -->
+  <!-- Uncomment below for Google Analytics. Faster-performing non-blocking asynchronous javascript load script for google analytics. Will not block items that load after it with this code -->
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <!--<script>
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -217,8 +218,9 @@
       s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>-->
 
-  <!-- University web analytics code for all university pages. If the web.byui.edu server is slow to respond, it will block any window.onload and $(document).ready events from firing. You may consider moving these two files to a app-local location, using relative linking -->
+  <!-- Uncomment below if you will be using Omniture Analytics. This is the university web analytics code for all university pages. If the web.byui.edu server is slow to respond, it will block any window.onload and $(document).ready events from firing. You may consider moving these two files to a app-local location, using relative linking -->
   <!--<script type="text/javascript" src="http://web.byui.edu/Omniture/s_code.js"></script>
   <script type="text/javascript" src="http://web.byui.edu/Omniture/omniture_code.js"></script>-->
+
 </body>
 </html>

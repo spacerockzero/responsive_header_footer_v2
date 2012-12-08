@@ -1,5 +1,7 @@
-/* RESPONSIVE FRAMEWORK FOR CUSTOM CODE */
-/* Framework by Jakob Anderson : and08073@byui.edu for any questions */
+/* Custom Local Responsive Framework */
+/* Framework by Jakob Anderson : and08073@byui.edu
+   of University Communications Web Services 
+   for any questions */
 
 /* All style code to be used on responsive
    framework must be nested under the 
@@ -17,7 +19,7 @@
 
 /* ALL RESPONSIVE CODE GOES IN THE FOLLOWING */
 
-/* GENERAL CODE TO ONLY APPLY TO PAGES USING RESPONSIVE */
+/* ANY GENERAL CODE TO ONLY APPLY TO PAGES USING RESPONSIVE */
 .responsive {
 
 }
@@ -31,7 +33,7 @@
 /**                  320 PX RESPONSIVE for Mobile Portrait View                           */
 /**                                                                                       */
 /******************************************************************************************/
-/* styles for 320px and up! */
+/* styles for 320px to 480px! */
 @media only screen and (min-width: 320px), only screen and (max-width: 480px) {
   .responsive {
 
