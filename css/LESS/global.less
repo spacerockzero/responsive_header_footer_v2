@@ -63,12 +63,18 @@ nav li {
 #search_mobile {
 	display:none;
 }
+.search_box_img{
+	background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgMDAwMDAwMDAwP/2wBDAQEBAQEBAQEBAQECAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/wgARCAA4AAMDAREAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAwQAAQj/xAAYAQADAQEAAAAAAAAAAAAAAAAAAQIIA//aAAwDAQACEAMQAAABxDrDIqz5pkiVjV0OI//EABcQAQEBAQAAAAAAAAAAAAAAABEAASD/2gAIAQEAAQUCdmZ4/8QAHxEAAAQHAQAAAAAAAAAAAAAAABFh8AESIEJRodGx/9oACAEDAQE/ARMr4oKL7nVoJvyj/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwF//8QAJRAAAQIEBAcAAAAAAAAAAAAAERIyAAExYRNBQ/AgISIzUnGi/9oACAEBAAY/AqzBV3ZJUXqfiq12q6WxchkiQAWqTpNTyrGVL09eP1nG9m/B/8QAIBAAAQIFBQAAAAAAAAAAAAAAEQAxIUFRgfABEKHB4f/aAAgBAQABPyGFmlhobMrjGY8ayhh0XRzpucvOpeLGiO//2gAMAwEAAgADAAAAEI/zN//EACERAAIBAwMFAAAAAAAAAAAAABExAAEhUUFh8IGRocHh/9oACAEDAQE/EDTnPEAIH0LDu7rqal3s16ZDihAWmMD6cG8ME//EACMRAAAEAwkAAAAAAAAAAAAAAAABEfAxQVEQIWFxgaGx0eH/2gAIAQIBAT8Qb7CYG3DSIUqF5lTeYXms3O28f//EACEQAAEEAQMFAAAAAAAAAAAAABEAMVFxIUGBsQFhocHw/9oACAEBAAE/EHsshfxqHETXsFDQJzloDQwG7Ge5JEHCjmWvAHCU0jpQrsyHAR4Oy//Z);
+}
+.lt-ie8 .search_box_img{
+	background: url('../images/head/searchboxbkg.jpg') repeat-x #326ba9;
+}
 #search_box{
 	position: absolute;
 	top:0;
 	left: 680px;
 	clear: both;
-	background: url('../images/head/searchboxbkg.jpg') repeat-x #326ba9;
+	//background: url('../images/head/searchboxbkg.jpg') repeat-x #326ba9;
 	-moz-box-shadow: 0 0px 15px #000;
 	-webkit-box-shadow: 0 0px 15px #000;
 	box-shadow: 0 0px 15px #000;
@@ -108,11 +114,18 @@ nav li {
 		width: 227px;
 		font-size: 13px;
 	}
+	.search_box_submit_img{
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAFXUlEQVRIS5WWa0hVWRTHd77SfF21l1ZW5iN7YUWYZokZoWgpNugtSU3TSgS/9CCKImIUxLjgOL4IJUikENM+GUVQCRYK4gfvMDEYDYxWoFyc1LJkzfov7r6czjQ2HvjpuXuv/3+/zt5rq+3btysjcXFxateuXRamcPfu3e3Mb4zDCd7bUYcYxJr13/zYsWMHDK3Ma4Z+AGKs0PyXoTtX2vg/LQanxl37qM2bN6vY2Fi1detWG0MaLqNNmzZReHg4bdiwgWJiYmjLli2uehM2eMBL/jB5DAFtFB0dTTk5OXT16lUqLy+n+Ph4lzFidLwBeCgVFRVlYfEbGACIIH706BEZn3fv3tHFixdp/fr1xBqJNfEGXop7U4AegYiICOHJkydi0t/fLz1sbGyk6elp+vr1KxUVFVFYWJjEf4cCtXHjxg6GQGhoKGVlZYnZixcvaO3ateTr60t+fn5UUlIi5b29vWKInmqdgQ7Fk27HxIOgoCC6fPmyCK9cuUJLly4V4Zo1a6T+/fv39PbtWxHrMhN2xb1woCcAhsXFxWLY3NwshqtWraLAwEDiD5lmZmaor69PyjAarTPgUFzhQCVYsWKFrOLY2Bh9+vTJtQh79+6lp0+fSkOtra3S0OrVq0VjwqFWrlxpR4uA3ykgIIBOnjxJU1NTYoDFMD4fP36ks2fPkre3t3RAa516u1q+fHkHQ0aWLVtGycnJ1NTURM+fP6cHDx5QXV2dDFk3curUKVksk7ZDBQcHF2DuzPj4+JCXl5fMHxpQStG5c+foy5cvYjo/P0/Hjh2TGK2Bl2KBhYf5BkIzGL6/v7+LJUuWiCm+x/v378vKojFnLDwsigNBHrq/EDCEGAuCLYkhenp6SrmzPg9eYsgFioNtEPwITAWGj6Eaym3wEENeLY07t25DDxaJDVrtYzRUXKk8PDyszO8M/QDEWKExenzPULm7uwcyhW5ubncZO+Nwgve7qEMMYv9lyF9Anhk+qorv3bvXcOvWrb4bN278xSfONMA7ylCHGLMOwPAnI/w52PhgGDt//jwtBGIQa9bDMBvMzc3l1NbWPqysrKTFAA202geGmaCqqqobR70GH3BpaalsMZxAZ86ckTJjjAZa7QPDtNu3b1dBrIEJDtSbN2/SnTt3qL6+XnpTWFhIp0+fdsUZgQe81OjoaBYXjCMY5OfnU0VFBQ0MDJDxmZycpJaWFjpx4gQVFBRIrBF4wEvV1NT8bLVaycjg4KCYjIyMoGXq7u6m2dlZORCqq6tl65k1AF6qrKzsMU4NcOTIEbp06ZKYDQ8PU3Z2Nh08eJBSU1MxT1L+8uVLOnr0qJhqnQZeil9GMzMzCUCM+cLT0NBAiYmJ0kh6errUT0xM0Pj4uBjqMiPwUmlpaX8fPnyYwP79++n69eti2NnZSXv27JFG9u3bJ0NCWhgaGnL1Wus08FIpKSlTOJ1BUlISZWRk0IcPH+jz58/Eu4IOHTpEx48fp1evXklDXV1dclk6cOCAaIzAS3Gv/khISCCAZLRz5066cOGC5A48+tjXD35fu3aNtm3bJjcMrQXwguFDmBjBXSU3N5fa29ulZ7iWtLW1yUprU2w/XJ6MOngpnsxKVJjB1QL3HJhHRkZKYsclwJhT8EEjRmvgpTjPRvFF50+IzBjvOwCpErkaOaWnp0d6hbyNWHjAC1sviOei+Du3gG9Yt26d3GmQ4LFTYII8jnLUwwNeMPQH3NKvCPg/IDGFhIS4fkOrfWDoA549e+bHQ/rFYrHQYoAGWu0DQ08jnKzzOYu9RnZbCMQg1qyHoZsZvq4FcX4o4rzbznnDzjic2FGGOsSYdeAfkJKeUvUyXZwAAAAASUVORK5CYII=);
+}
+	.lt-ie8 .search_box_submit_img{
+		background-image: url('../images/head/search.png');
+	}
 	.search_box_submit {
 		position:relative;
 		border: 0px;
 		top:2px;
-		background-image: url('../images/head/search.png');
+		
+		//background-image: url('../images/head/search.png');
 		background-repeat: no-repeat;
 		background-color: transparent;
 		width: 20px;
@@ -244,7 +257,7 @@ nav li {
 	clear:both;
 }
 #footer_graphic div {
-	background: url('../images/foot/taylor_graphic.png') no-repeat center;
+	//background: url('../images/foot/taylor_graphic.png') no-repeat center;
 	height: 146px;
 }
 	
