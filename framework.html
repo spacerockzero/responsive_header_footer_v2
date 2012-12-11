@@ -19,13 +19,6 @@
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="icon" href="favicon.ico" />
-    
-  <!-- Blueprint Framework and "Gracefully Degrading" css for older/cross-browser standards compliance -->
-	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-	<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"> 
-	<!--[if lt IE 8]>
-		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection" />				
-	<![endif]-->
 
 	<!-- Global Framework Stylesheet -->
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection">
@@ -59,12 +52,14 @@
 	<header class="global_outside main_header">
 		<div id="main_header" class="container">
 			<div class="span-2">
-				<a href="http://www.byui.edu/?cid=hli:112"><img src="images/head/byuilogo.png" alt="Brigham Young University Logo" height="41" width="70" /></a>
+				<a href="http://www.byui.edu/?cid=hli:112" class="byui_logo_img">
+					<!-- <img src="images/head/byuilogo.png" alt="Brigham Young University Logo" height="41" width="70" /> -->
+				</a>
 			</div>
 			<div class="span-9">
 				<h1 id="university_name"><a href="http://www.byui.edu/?cid=hli:113">Brigham Young University - Idaho</a></h1>
 			</div>
-			<nav id="audience_nav_box" class="span-13 last">
+			<nav id="audience_nav_box" class="audience_nav_boxes_img span-13 last">
 				<ul>
 					<li class="first"><a href="http://www.byui.edu/students/?cid=hli:101">Students</a></li>
 					<li><a href="http://www.byui.edu/future-students/?cid=hli:102">Future Students</a></li>
@@ -74,7 +69,7 @@
 					<li class="last"><a href="http://www.byui.edu/visitors/?cid=hli:106">Visitors</a></li>	
 				</ul>
 			</nav>
-			<div id="search_box" class=".search_box_img span-7 last">
+			<div id="search_box" class="search_box_img span-7 last">
 				<nav>
 					<ul>
 						<li class="first"><a href="http://www.byui.edu/directories/?cid=hli:108">Directories</a></li>
@@ -86,7 +81,7 @@
 				<div id="search_wrapper">
 					<form method="get" action="http://search.byui.edu/search?">
 						<input type="text" class="search_box" name="q"/>
-						<input type="image" src="" class="search_box_submit search_box_submit_img"/>
+						<input type="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGUlEQVQoz2P8//8/A7mAcVTzqOZRzVTWDAA9uCzj9M02DQAAAABJRU5ErkJggg==" class="search_box_submit search_box_submit_img"/>
 						<input type="hidden" name="site" value="default_collection"/>
 						<input type="hidden" name="client" value="beta_frontend"/>
 						<input type="hidden" name="output" value="xml_no_dtd"/>
@@ -110,14 +105,14 @@
 	<footer id="mega_footer" class="global_outside">
 		
 		<div class="global_outside footer_graphic">
-			<div id="footer_graphic" class="container">
+			<div id="footer_graphic" class=".footer_graphic_img container">
 				<div></div>
 			</div>
 		</div><!-- end global_outside footer_graphic -->
 
 		<div class="global_outside footer_nav">
 			<div id="footer_nav" class="container">
-				<nav id="audience_nav_box_bottom" class="span-15">
+				<nav id="audience_nav_box_bottom" class="audience_nav_boxes_img span-15">
 					<ul>
 						<li class="first"><a href="http://www.byui.edu/students/?cid=fli:101">Students</a></li>
 						<li><a href="http://www.byui.edu/future-students/?cid=fli:102">Future Students</a></li>
@@ -160,7 +155,7 @@
 		</div><!-- end global_outside footer_nav -->
 
 		<div class="global_outside footer_links_container">
-			<div id="footer_links_container" class="container">	
+			<div id="footer_links_container" class="footer_links_container_img container">	
 			</div>
 			<div id="bottom_padding" class="container"></div>
 		</div><!-- end global_outside footer_links_container -->
@@ -169,22 +164,22 @@
 			<div id="footer_brand" class="container">
 				<div id="left_container" class="span-16">
 					<div>
-						<a id="lds_church_link" href="http://www.lds.org/?cid=fli:182" title="The Church of Jesus Christ of Latter-Day Saints">The Church of Jesus Christ of Latter-Day Saints</a>
-						<a id="byu_link" href="http://www.byu.edu/?cid=fli:183" title="Brigham Young University - Provo">Brigham Young University - Provo</a>
-						<a id="byuh_link" href="http://www.byuh.edu/?cid=fli:184" title="Brigham young University - Hawaii">Brigham young University - Hawaii</a>
-						<a id="ldsbc_link" href="http://www.ldsbc.edu/?cid=fli:185" title="LDS Business College">LDS Business College</a>
+						<a id="lds_church_link" class="footer_sprite_img" href="http://www.lds.org/?cid=fli:182" title="The Church of Jesus Christ of Latter-Day Saints">The Church of Jesus Christ of Latter-Day Saints</a>
+						<a id="byu_link" class="footer_sprite_img" href="http://www.byu.edu/?cid=fli:183" title="Brigham Young University - Provo">Brigham Young University - Provo</a>
+						<a id="byuh_link" class="footer_sprite_img" href="http://www.byuh.edu/?cid=fli:184" title="Brigham young University - Hawaii">Brigham young University - Hawaii</a>
+						<a id="ldsbc_link" class="footer_sprite_img" href="http://www.ldsbc.edu/?cid=fli:185" title="LDS Business College">LDS Business College</a>
 					</div>
 				</div>
 				<div id="right_container" class="span-8 last">
 					<div id="social_icons">
-						<a id="byui_facebook_link" href="http://www.byui.edu/social-media/facebook/?cid=fli:186" title="BYU-I Facebook">BYU-I Facebook</a>
-						<a id="byui_youtube_link" href="http://www.byui.edu/social-media/youtube/?cid=fli:187" title="BYU-I YouTube">BYU-I YouTube</a>
-						<a id="byui_linkedIn_link" href="http://www.byui.edu/social-media/linkedin/?cid=fli:188" title="BYU-I LinkedIn">BYU-I LinkedIn</a>
-						<a id="byui_social_media_link" href="http://www.byui.edu/social-media/?cid=fli:189" title="BYU-I Social Media Sites">More</a>
+						<a id="byui_facebook_link" class="footer_sprite_img" href="http://www.byui.edu/social-media/facebook/?cid=fli:186" title="BYU-I Facebook">BYU-I Facebook</a>
+						<a id="byui_youtube_link" class="footer_sprite_img" href="http://www.byui.edu/social-media/youtube/?cid=fli:187" title="BYU-I YouTube">BYU-I YouTube</a>
+						<a id="byui_linkedIn_link" class="footer_sprite_img" href="http://www.byui.edu/social-media/linkedin/?cid=fli:188" title="BYU-I LinkedIn">BYU-I LinkedIn</a>
+						<a id="byui_social_media_link" class="footer_sprite_img" href="http://www.byui.edu/social-media/?cid=fli:189" title="BYU-I Social Media Sites">More</a>
 					</div>
 					<p><a href="http://www.byui.edu/copyright/policy/terms-of-use/?cid=fli:190">© 2012</a> Brigham Young University–Idaho<address>525 South Center St., Rexburg, ID 83460, <a href="tel:12084961411">(208) 496-1411</a></address></p>
 					<nav id="access_links">
-						<ul>
+						<ul class="footer_sprite_img">
 							<li class="first"><a href="http://www.byui.edu/disabilities/?cid=fli:191">Disability Services</a></li>
 							<li class="last"><a href="http://www.byui.edu/feedback/?cid=fli:192" title="General feedback">Feedback</a></li>
 						</ul>
