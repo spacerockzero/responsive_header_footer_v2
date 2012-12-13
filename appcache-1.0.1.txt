@@ -1,0 +1,22 @@
+CACHE MANIFEST
+ # 2012-12-13 v1.0.0
+ # See: http://www.html5rocks.com/en/tutorials/appcache/beginner/
+
+# Explicitly cached 'master entries'.
+CACHE:
+favicon.ico
+css/main-1.0.0.min.appcached.css
+js/libs/modernizr.custom.min.appcached.js
+
+# Resources that require the user to be online.
+NETWORK:
+css/style.css
+
+# some extra examples of appCache functionality:
+# static.html will be served if main.py is inaccessible
+# offline.jpg will be served in place of all images in images/large/
+# offline.html will be served in place of all other .html files
+FALLBACK:
+# /main.py /static.html
+# images/large/ images/offline.jpg
+*.html offline.html
