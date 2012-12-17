@@ -1,18 +1,15 @@
 CACHE MANIFEST
- # 2012-12-13 v1.0.0
+ # 2012-12-17 v1.0.0
 
 # Explicitly cached 'master entries'.
 CACHE:
 favicon.ico
 css/main-1.0.3.min.appcached.css
-# css/style.css
 js/libs/modernizr.custom.min.appcached.js
+# Don't app-cache assets until they are deployment-ready and unlikely to change often, example below:
+# css/style.css
 
 # Resources that require the user to be online.
 NETWORK:
-# implicit everything for now, using "/"
-/
-# Perfect appCache implementation should specify directories of non-cached assets explicitly
-# css/
-# images/
-# js/
+# implicit everything else, using "*"
+*
