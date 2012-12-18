@@ -1,15 +1,6 @@
-/*responsive css sample */
+/*responsive css stylesheet */
 
-/* NOTE: This stylesheet will need to be completely redone, 
-         given major DOM changes in the overall layout of our pagetypes 
-         and global structure - Jakob [02.03.2012] 
-         PS: Try not to target HTML5 elements, for best cross-browser redundancy */
-
-
-/*toggle show container for width testing*/
-
-/*body {background:black;}*/
-
+/* NOTE: Try not to select HTML5 elements directly, for best cross-browser redundancy */
 
 .responsive {
 	.page_content {background:white;}
@@ -22,41 +13,41 @@
 		#footer_brand {
 			min-height:auto;
 			#left_container{
-				#lds_church_link {
-					width:155px;
-					background-position:-9px -40px;
-					padding-right: 24px;
+				.lds_church_link_container {
+					//width:155px;
+					//background-position:-9px -40px;
+					// padding-right: 24px;
 					margin-right:25px;
-					padding-right: 24px;
+					// padding-right: 24px;
 					&:hover{
-						background-position:-9px -116px;
+						//background-position:-9px -116px;
 					}
 				}
 				#byu_link {
-					width: 72px;
-					background-position: -219px -40px;
+					// width: 72px;
+					// background-position: -219px -40px;
 					margin-right:25px;
-					left:10px;
+					// left:10px;
 					&:hover{
-						background-position:-219px -116px;
+						// background-position:-219px -116px;
 					}
 				}
 				#byuh_link {
-					width: 71px;
-					background-position: -320px -40px;
+					// width: 71px;
+					// background-position: -320px -40px;
 					margin-right:25px;
-					left:10px;
+					// left:10px;
 					&:hover{
-						background-position:-320px -116px;
+						//background-position:-320px -116px;
 					}
 				}
 				#ldsbc_link {
-					width: 69px;
-					background-position: -419px -40px;
-					margin-right:25px;
+					// width: 69px;
+					// background-position: -419px -40px;
+					// margin-right:25px;
 					left:10px;
 					&:hover{
-						background-position:-419px -116px;
+						// background-position:-419px -116px;
 					}
 				}
 			}
@@ -67,7 +58,7 @@
 /*RESPONSIVE WEB EXAMPLES*/
 /******************************************************************************************/
 /**
-/**                  320 PX RESPONSIVE for Mobile Landscape View
+/**                  320 PX RESPONSIVE for Mobile Portrait View
 /**
 /******************************************************************************************/
 /*styles for 320px and up! Max container width using blueprint is to be 310px, or span-8 */
@@ -96,9 +87,10 @@
 		/*MAIN HEADER (blue heading area)*/
 		#main_header {
 			height:40px;
-			.span-2 a img {
-				width:45px;
-				height:auto;
+			.span-2 a{
+				width: 45px;
+				height: 26px;
+				background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAaCAYAAAAjZdWPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5MTRFQTAyMTNDMDQxMUUyQkRERTk5MThBQzVCNEZDNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5MTRFQTAyMjNDMDQxMUUyQkRERTk5MThBQzVCNEZDNyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjkxNEVBMDFGM0MwNDExRTJCRERFOTkxOEFDNUI0RkM3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjkxNEVBMDIwM0MwNDExRTJCRERFOTkxOEFDNUI0RkM3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ccvoAgAACelJREFUeNqMlwl0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);
 			}
 			#university_name {
 				font-size:15px;
@@ -212,7 +204,7 @@
 						border: 0px;
 						top:2px;
 						right:5px;
-						background-image: url('../images/head/search.png');
+						//background-image: url('../images/head/search.png');
 						background-repeat: no-repeat;
 						background-color: transparent;
 						width: 20px;
@@ -223,7 +215,7 @@
 			}
 			#footer_links {
 				clear:both;
-				#lds_church_link {
+				.lds_church_link_container {
 					padding-right: 0px;
 				}
 			}
@@ -382,7 +374,7 @@
 						position:relative;
 						border: 0px;
 						top:2px;
-						background-image: url('../images/head/search.png');
+						//background-image: url('../images/head/search.png');
 						background-repeat: no-repeat;
 						background-color: transparent;
 						width: 20px;
@@ -394,7 +386,7 @@
 			}
 			#footer_links {
 				clear:both;
-				#lds_church_link {
+				.lds_church_link_container {
 					padding-right: 0px;
 				}
 			}
@@ -437,9 +429,10 @@
 		
 		#main_header {
 			height:55px;
-			.span-2 a img {
+			.span-2 a  {
 				width:70px;
-				height:auto;
+				height:41px;
+				background-image: url(data:image/png;base64,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);
 			}
 			#university_name {
 				font-size:18px;
@@ -524,8 +517,8 @@
 			#footer_brand {
 				#left_container {
 					width:430px;
-					#lds_church_link {
-						padding-right: 10px;
+					.lds_church_link_container {
+						// padding-right: 10px;
 						margin-right:10px;
 						left:0px;
 					}
@@ -600,6 +593,11 @@
 			}
 			.span-2 {
 				width:70px;
+				a {
+					width:70px;
+					height:41px;
+					background-image: url(data:image/png;base64,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);
+				}
 			}
 			.span-9 {
 				width:350px;
@@ -676,9 +674,9 @@
 				min-height:inherit;
 				#left_container {
 					width:630px;
-					#lds_church_link {
+					.lds_church_link_container {
 						margin-right:25px;
-						padding-right: 24px;
+						// padding-right: 24px;
 					}
 					#byu_link {
 						margin-right:25px;

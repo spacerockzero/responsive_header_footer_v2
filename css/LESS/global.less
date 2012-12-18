@@ -385,55 +385,54 @@ nav li {
 #left_container div a {
 	float: left;
 	position: relative;
-	top: 10px;
+	top: 6px;
 	text-indent:-1000px;
 }
-#lds_church_link {
-	//background: url('../images/foot/footer_sprite.png') no-repeat;
-	background-position: 0px -40px;
-	height: 40px;
-	width: 128px;
+.lds_church_link_container{
 	border-right: 1px solid #5c5d5d;
+	height: 60px;
+	width:152px;
+	margin-right:10px;
+	display: block;
+	float: left;
+	padding-right:10px;
 }
-#byu_link {
-	//background: url('../images/foot/footer_sprite.png') no-repeat;
-	background-position: -200px -40px;
-	height: 45px;
-	width: 100px;
-	left: 10px;
-}
-#byuh_link {
-	//background: url('../images/foot/footer_sprite.png') no-repeat;
-	background-position: -305px -40px;
-	height: 65px;
-	width: 100px;
-	left: 10px;
-}
-#ldsbc_link {
-	//background: url('../images/foot/footer_sprite.png') no-repeat;
-	background-position: -400px -40px;
-	height: 75px;
-	width: 100px;
-	left: 10px;
+#lds_church_link {
+	background-position: -9px -32px;
+	height: 48px;
+	width:152px;
 }
 #lds_church_link:hover {
-	//background: url('../images/foot/footer_sprite.png') no-repeat;
-	background-position: 0 -116px;
+	background-position:-9px -80px;
+}
+#byu_link {
+	left: 10px;
+	background-position: -161px 0px;
+	height: 21px;
+	width: 71px;
 }
 #byu_link:hover {
-	//background: url('../images/foot/footer_sprite.png') no-repeat;
-	background-position: -200px -116px;
+	background-position:-161px -55px;
+}
+#byuh_link {
+	left: 10px;
+	background-position: -232px 0px;
+	height: 42px;
+	width: 71px;
 }
 #byuh_link:hover {
-	//background: url('../images/foot/footer_sprite.png') no-repeat;
-	background-position: -305px -116px;
+	background-position:-232px -55px;
+}
+#ldsbc_link {
+	left: 10px;
+	background-position: -303px 0px;
+	height: 55px;
+	width: 67px;
 }
 #ldsbc_link:hover {
-	//background: url('../images/foot/footer_sprite.png') no-repeat;
-	background-position: -400px -116px;
+	background-position:-303px -55px;
 }
 #social_icons {
-	//background: url('../images/foot/footer_sprite.png') no-repeat;
 	background-position: -2px 0px;
 	height: 40px;
 	margin-bottom: 15px;
@@ -444,35 +443,32 @@ nav li {
 	position: relative;
 	top: 0px;
 	text-indent:-1000px;
-
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	margin-right:6px;
 }
 #byui_facebook_link {
-	height: 40px;
-	width: 36px;
-	left: 0px;
+	background-position:0px 0px;
 }
 #byui_youtube_link {
-	height: 40px;
-	width: 41px;
-	left: 1px;
-}
-#byui_email_link {
-	height: 40px;
-	width: 41px;
-	left: 2px;
+	background-position:-32px 0px;
 }
 #byui_linkedIn_link {
-	height: 40px;
-	width: 41px;
-	left: 2px;
+	background-position:-64px 0px;
 }
-#access_links { 	
-	//background: black url('../images/foot/footer_sprite.png') no-repeat;
+#social_icons a#byui_social_media_link {
+	text-indent: 0px;
+	background-image:none;
+	top: 6px;
+	font-size: 14px;
+}
+#access_links {
 	background-repeat: no-repeat;
 	background-position: -527px -116px;
 	height: 22px;
 	padding-top: 2px;
-	padding-left: 30px;
+	//padding-left: 30px;
 }
 #access_links ul {
 	padding: 0;
@@ -487,6 +483,16 @@ nav li {
 #access_links li a {
 	color: #b7b7b7;
 	font-size:11px;
+	&.disability_img{
+		width: 20px;
+		height: 20px;
+		display: block;
+		float: left;
+		background-position: -111px 1px;
+		padding-right: 8px;
+		top: -2px;
+		position: relative;
+	}
 }
 // .bottom_padding_img{
 

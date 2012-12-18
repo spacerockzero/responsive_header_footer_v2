@@ -4,7 +4,7 @@ CACHE MANIFEST
 # Explicitly cached 'master entries'.
 CACHE:
 favicon.ico
-css/main-1.0.3.min.appcached.css
+# css/main-1.0.3.min.appcached.css
 js/libs/modernizr.custom.min.appcached.js
 # Don't app-cache assets until they are deployment-ready and unlikely to change often, example below:
 # css/style.css
