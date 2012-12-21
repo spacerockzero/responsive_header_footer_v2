@@ -19,8 +19,12 @@
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection">
 	<!--  Custom local stylesheet -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection">
-	<!-- Modernizr script is required for graceful degradation of HTML5 elements and modern feature detection -->
-	<script src="js/libs/modernizr.custom.min.js"></script>
+	<!-- html5shiv script is required for graceful degradation of HTML5 elements and modern feature detection. Note: remove if using Modernizr, as it is also included in Modernizr -->
+	<!--[if lt IE 9]>
+		<script src="js/libs/html5shiv.min.js"></script>
+	<![endif]-->
+	<!-- Uncomment Modernizr below for more "Progressive Enhancement" options -->
+	<!-- <script src="js/libs/modernizr.custom.min.js"></script>-->
 </head>
 
 <body class="responsive"><!-- To use responsive features, this "responsive" class must be added to the body element -->
@@ -68,7 +72,7 @@
 				<div id="search_wrapper">
 					<form method="get" action="http://search.byui.edu/search?">
 						<input type="text" class="search_box" name="q"/>
-						<input type="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGUlEQVQoz2P8//8/A7mAcVTzqOZRzVTWDAA9uCzj9M02DQAAAABJRU5ErkJggg==" class="search_box_submit search_box_submit_img"/>
+						<input type="submit" class="search_box_submit search_box_submit_img visuallyhidden focusable"/>
 						<input type="hidden" name="site" value="default_collection"/>
 						<input type="hidden" name="client" value="beta_frontend"/>
 						<input type="hidden" name="output" value="xml_no_dtd"/>
@@ -121,7 +125,7 @@
 					<div id="search_wrapper_bottom">
 						<form method="get" action="http://search.byui.edu/search?">
 							<input type="text" class="search_box" name="q"/>
-							<input type="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGUlEQVQoz2P8//8/A7mAcVTzqOZRzVTWDAA9uCzj9M02DQAAAABJRU5ErkJggg==" class="search_box_submit search_box_submit_img"/>
+							<input type="submit" class="search_box_submit search_box_submit_img visuallyhidden focusable"/>
 							<input type="hidden" name="site" value="default_collection"/>
 							<input type="hidden" name="client" value="beta_frontend"/>
 							<input type="hidden" name="output" value="xml_no_dtd"/>
@@ -181,9 +185,11 @@
 
 	</footer><!-- end mega_footer global_outside -->
 
-  <!-- Uncomment below if you will be using jQuery. Load it from the google CDN first, falling back to a local copy if that fails with the following method, as per HTML5 Boilerplate -->
+  <!-- Uncomment below if you will be using jQuery -->
   <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>-->
+	
+	<script type="text/javascript">/*iOS Auto-Zoom bugFix, rewritten version By @mathias, @cheeaun and @jdalton*/(function(a){function c(){b.content="width=device-width,minimum-scale="+d[0]+",maximum-scale="+d[1];a.removeEventListener(e,c,!0)}var e="gesturestart",d=[1,1],b="querySelectorAll"in a?a.querySelectorAll("meta[name=viewport]"):[];if((b=b[b.length-1])&&"addEventListener"in a)c(),d=[0.25,1.6],a.addEventListener(e,c,!0)})(document);</script>
 
   <!-- Put any custom js plugins and scripts you use here, for example: -->
   <!--<script src="js/plugins.js"></script>
@@ -202,6 +208,5 @@
   <!--<script type="text/javascript" src="http://web.byui.edu/Omniture/s_code.js"></script>
   <script type="text/javascript" src="http://web.byui.edu/Omniture/omniture_code.js"></script>-->
 
-  <!--<script type="text/javascript" src="http://joaquinnunez.cl/download/jquery.css.cleaner.js"></script>-->
 </body>
 </html>

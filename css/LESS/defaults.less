@@ -21,24 +21,18 @@ html{
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	color: #666666;
-	overflow-x: hidden;
-	font-size: 14pt;
+	// overflow-x: hidden;
+	overflow-x: visible;
+	// font-size: 14pt;
+	font-size: @default_text;
 	-webkit-font-smoothing: antialiased;
-	/*font-smooth: always;*/
+	width:inherit;
 	background:white;
 }
 html.ie7 {
-/*	margin-left: 5%;
-	margin-right: 5%;*/
-	overflow-x:hidden;
-	/*max-width:101%;
-	body {
-		max-width:101%;
-		display:block;
-		.container {
-			max-width:101%;
-		}
-	}*/
+	// overflow-x:hidden;
+	overflow-x:visible;
+	width:inherit;
 } 
 
 /*Formatting quoted code*/
