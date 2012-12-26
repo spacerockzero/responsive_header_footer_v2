@@ -2,7 +2,7 @@
 /*CONTENT AREA TYPOGRAPHY STYLES*/
 
 /*BODY COPY STYLES*/
- /*All body-copy styles must be within a .type class, because they must only inherit in places where the body-copy XSL template is being used*/
+ /*All body-copy styles must be within a .type class, because they must only inherit in places where the body-copy template is being used*/
 
 /*DEFAULT TEXT VARIABLES*/
 @default_text:11pt;  /* 14pt default seems a bit large? Adjusts here dynamically for all type styles */
@@ -10,15 +10,10 @@
 .object_padding {padding-bottom:8px;margin-bottom:0px;}
 @default_indent:15px;
 
-/*@text_color:#6d6e71;*/
 @text_color:@byui_darker_gray;
 
-/* deprecated by global variables in variables.less file, but keeps this file compiling */
-/*@byui_med_blue:#007ebd;
-@byui_med_gray:#6d6e71;*/
-
 .serif {
-  	font-family: "Georgia", Times New Roman, Times, serif;
+  	font-family: "Georgia", "Times New Roman", Times, serif;
 }
 .sans-serif {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,7 +21,6 @@
 .type, #tinymce {
 	.serif;
  	font-size: @default_text;
- 	/*color:@byui_med_gray;*/
  	color:@text_color;
  	line-height:1.4em;
  	a {	
@@ -40,7 +34,6 @@
 	p {
 		.serif;
 	 	font-size: @default_text;
-	 	/*color:@byui_med_gray;*/
 	 	color:@text_color;
 	 	line-height:1.4em;
 	}
@@ -165,7 +158,6 @@
 			border-left:none;
 		}
 		th {
-			/*padding-top: 9px;*/
 			font-weight:bold;
 			vertical-align:middle;
 			background-color: @byui_med_blue;
@@ -182,24 +174,9 @@
 		tbody tr.odd td {
 			background:none repeat scroll 0 0 #FFFFFF;
 		}
-		/*tbody tr:nth-child(1) td,
-		tbody tr.even td {
-			padding-top: 9px;
-			font-weight:bold;
-			vertical-align:middle;
-			background-color: @byui_med_blue;
-			color: #fff;
-		}*/
 		tbody tr:hover td {
 			background:none repeat scroll 0 0 #F1F1F1;
 		}
-	}
-	table:nth-child(1) td{
-		/*padding-top: 9px;
-		font-weight:bold;
-		vertical-align:middle;
-		background-color: @byui_med_blue;
-		color: #fff;*/
 	}
 }
 .ie7 .type table, .ie8 .type table {

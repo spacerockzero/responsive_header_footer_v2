@@ -17,20 +17,16 @@ a:hover, a:active {
 html{
 	background-color:black;
 }
-/*html {overflow:auto; overflow-y: scroll;}*/
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	color: #666666;
-	// overflow-x: hidden;
 	overflow-x: visible;
-	// font-size: 14pt;
 	font-size: @default_text;
 	-webkit-font-smoothing: antialiased;
 	width:inherit;
 	background:white;
 }
 html.ie7 {
-	// overflow-x:hidden;
 	overflow-x:visible;
 	width:inherit;
 } 
@@ -43,11 +39,7 @@ pre {
 	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
 	word-wrap: break-word; /* IE */
 }
-/*Aligning Labels*/
-/* align checkboxes, radios, text inputs with their label */
-/*input[type="radio"] { vertical-align: text-bottom; }
-input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
-.ie6 input { vertical-align: text-bottom; }*/
+
 /*Clickable inputs*/
 /* hand cursor on clickable input elements */
 label, input[type=button], input[type=submit], button { cursor: pointer; }
@@ -76,7 +68,6 @@ label, input[type=button], input[type=submit], button { cursor: pointer; }
 	text-indent:-999px;
 }
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
-//.visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus { 
 	clip: auto; 
 	height: auto; 
@@ -117,7 +108,6 @@ label, input[type=button], input[type=submit], button { cursor: pointer; }
 }
 #top_region, #bottom_region, #left_aside, #local_nav, #right_aside, #top_content, #main_content, #bottom_content {
 	margin-bottom: 10px;
-	/*width:100%;*/
 }
 
 
